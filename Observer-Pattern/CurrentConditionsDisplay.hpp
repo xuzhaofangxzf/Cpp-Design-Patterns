@@ -22,7 +22,7 @@ public:
     }
 
     ~CurrentConditionsDisplay() {
-        weatherData->registerObserver(this);
+        weatherData->removeObserver(this);
     }
 
     void update(float t, float h, float p) {
